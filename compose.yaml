@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    container_name: docker-image-optimization
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
